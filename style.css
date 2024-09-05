@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	background-color: #6a9c89;
+}
+
+/* set the items aligned horizontally and centered into container */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* set the anchor decoration to none */
+a {
+	text-decoration: none;
+}
+
+/* set the nagivation bar with a max width of 800px */
+nav {
+	width: 800px;
+}
+
+/* style for natigation bar */
+.nav-items {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 7vh;
+	background: rgba(196, 218, 210, 0.22);
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.9px);
+	-webkit-backdrop-filter: blur(3.9px);
+}
+
+/* set the items aligned horizontally and centered into container */
+.nav-items > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	height: 100%;
+}
+
+.drop-down {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.drop-down-items {
+	width: 25%;
+	height: 150px;
+}
+
+/* style for dropdown content */
+#services {
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(196, 218, 210, 0.22);
+	border-radius: 0 0 10px 10px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.9px);
+	-webkit-backdrop-filter: blur(3.9px);
+	animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+/* set the dropdown content hidden by default */
+.service-items {
+	display: none;
+}
+
+/* set the dropdown content to show */
+.show {
+	display: inline-grid;
+}
+
+/* Simple annimation when dropdown appear */
+@keyframes swing-in-top-fwd {
+	0% {
+		-webkit-transform: rotateX(-100deg);
+		transform: rotateX(-100deg);
+		-webkit-transform-origin: top;
+		transform-origin: top;
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+		-webkit-transform-origin: top;
+		transform-origin: top;
+		opacity: 1;
+	}
+}

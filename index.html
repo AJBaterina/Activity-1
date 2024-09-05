@@ -1,0 +1,56 @@
+<!-- 
+	Simple Navigation Bar 
+
+	First we need to create html boilerplate
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nav Bar</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Create a header container for the navigation bar -->
+		<header>
+			<!-- Create a navigation bat container -->
+			<nav>
+				<!-- Creatine a container for nagivation items -->
+				<div class="nav-items">
+					<!-- Use anchor tag to add items into natigation bar -->
+					<a href="" class="nav-item">Home</a>
+					<a href="" class="nav-item">About</a>
+					<a
+						href=""
+						id="service"
+						class="nav-item"
+						onmouseenter="mouseOver()"
+						onmouseleave="mouseOut()"
+						>Services 🔽</a
+					>
+					<a href="" class="nav-item">Contact</a>
+				</div>
+				<!-- Create a container for dropdown items -->
+				<div class="drop-down">
+					<div class="drop-down-items"></div>
+					<div class="drop-down-items"></div>
+					<div
+						class="drop-down-items service-items"
+						id="services"
+						onmouseenter="mouseOver()"
+						onmouseleave="mouseOut()">
+						<a href="" class="service-content">Web Development</a
+						><a href="" class="service-content">Mobile App Development</a
+						><a href="" class="service-content">UI/UX Development</a>
+					</div>
+					<div class="drop-down-items"></div>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Import external script for a dropdown menu -->
+		<script src="index.js"></script>
+	</body>
+</html>
